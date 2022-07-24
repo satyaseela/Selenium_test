@@ -8,6 +8,7 @@ public class gcreddy {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+//		System.setProperty(WebDriver.chrome.driver, "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://gcreddy.com/project/admin/login.php");

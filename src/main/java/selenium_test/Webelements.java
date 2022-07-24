@@ -12,17 +12,17 @@ public class Webelements {
 		WebDriver driver = new ChromeDriver();
 		driver .get("https://www.amazon.com/");
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("laptop");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.findElement(By.id("nav-search-submit-button")).click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.findElement(By.linkText("HP")).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElement(By.linkText("Computers & Electronics Service Plans")).click();
 		driver.navigate().to(("https://nb-no.facebook.com/"));
-				
-
+		driver.navigate().back();
+		driver.close();
 	}
 
 }
